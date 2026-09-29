@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="444" viewBox="0 0 520 444" role="img" aria-label="About Abdulaziz Alfahad">
+<style>
+  text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 13px; }
+  .t { fill: #8C8479; font-size: 12px; }
+  .u { fill: #E4572E; font-weight: 700; }
+  .sep { fill: #2E2A25; }
+  .k { fill: #E4572E; }
+  .v { fill: #EDE6DA; }
+  .r { opacity: 0; animation: in .35s ease-out forwards; }
+  @keyframes in { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .r { animation: none; opacity: 1; } }
+</style>
+<rect width="520" height="444" rx="14" fill="#11100E"/>
+<rect x=".5" y=".5" width="519" height="443" rx="13.5" fill="none" stroke="#2E2A25"/>
+<rect x="1" y="1" width="518" height="34" rx="13" fill="#1A1815"/>
+<rect x="1" y="22" width="518" height="13" fill="#1A1815"/>
+<line x1="1" y1="35" x2="519" y2="35" stroke="#2E2A25"/>
+<circle cx="22" cy="18" r="5.5" fill="#E4572E"/><circle cx="40" cy="18" r="5.5" fill="#E8A33D"/><circle cx="58" cy="18" r="5.5" fill="#6BA368"/>
+<text x="260.0" y="22" class="t" text-anchor="middle">whoami</text>
+<text x="26" y="64" class="u">abdulaziz@github</text>
+<text x="26" y="78" class="sep">────────────────</text>
+<g class="r" style="animation-delay:0.35s"><text x="26" y="93" class="k">name</text><text x="122" y="93" class="v">Abdulaziz Alfahad</text></g><g class="r" style="animation-delay:0.44s"><text x="26" y="114" class="k">role</text><text x="122" y="114" class="v">Software Engineer · iOS Developer</text></g><g class="r" style="animation-delay:0.53s"><text x="26" y="135" class="k">company</text><text x="122" y="135" class="v">Sanal (sanal.ai)</text></g><g class="r" style="animation-delay:0.62s"><text x="26" y="156" class="k">location</text><text x="122" y="156" class="v">Riyadh, Saudi Arabia</text></g><g class="r" style="animation-delay:0.71s"><text x="26" y="177" class="k">education</text><text x="122" y="177" class="v">B.Sc. Software Engineering · GPA 4.65/5</text></g><g class="r" style="animation-delay:0.8s"><text x="26" y="209.55" class="k">focus</text><text x="122" y="209.55" class="v">iOS · Web platforms · AI products</text></g><g class="r" style="animation-delay:0.89s"><text x="26" y="230.55" class="k">stack</text><text x="122" y="230.55" class="v">Swift, SwiftUI, React, Next.js, TypeScript</text></g><g class="r" style="animation-delay:0.98s"><text x="26" y="251.55" class="k">backend</text><text x="122" y="251.55" class="v">Node.js, Java, PostgreSQL, Prisma</text></g><g class="r" style="animation-delay:1.07s"><text x="26" y="284.1" class="k">projects</text><text x="122" y="284.1" class="v">Sharih · Motivito · Names of Allah</text></g><g class="r" style="animation-delay:1.16s"><text x="26" y="305.1" class="k">awards</text><text x="122" y="305.1" class="v">1st place, Saudi Preneur</text></g><g class="r" style="animation-delay:1.25s"><text x="26" y="326.1" class="k">ventures</text><text x="122" y="326.1" class="v">7+ yrs e-commerce · 800K+ SAR sales</text></g><g class="r" style="animation-delay:1.34s"><text x="26" y="358.65000000000003" class="k">web</text><text x="122" y="358.65000000000003" class="v">8cy7.github.io</text></g><g class="r" style="animation-delay:1.43s"><text x="26" y="379.65000000000003" class="k">linkedin</text><text x="122" y="379.65000000000003" class="v">in/abdulaziz-alfahad-b3b2a2243</text></g>
+<rect class="r" style="animation-delay:1.52s" x="26" y="406.65000000000003" width="22" height="12" rx="2" fill="#26231F"/><rect class="r" style="animation-delay:1.52s" x="52" y="406.65000000000003" width="22" height="12" rx="2" fill="#5A2A1C"/><rect class="r" style="animation-delay:1.52s" x="78" y="406.65000000000003" width="22" height="12" rx="2" fill="#8F3520"/><rect class="r" style="animation-delay:1.52s" x="104" y="406.65000000000003" width="22" height="12" rx="2" fill="#C44627"/><rect class="r" style="animation-delay:1.52s" x="130" y="406.65000000000003" width="22" height="12" rx="2" fill="#F0643A"/><rect class="r" style="animation-delay:1.52s" x="156" y="406.65000000000003" width="22" height="12" rx="2" fill="#E8A33D"/><rect class="r" style="animation-delay:1.52s" x="182" y="406.65000000000003" width="22" height="12" rx="2" fill="#6BA368"/><rect class="r" style="animation-delay:1.52s" x="208" y="406.65000000000003" width="22" height="12" rx="2" fill="#EDE6DA"/>
+</svg>

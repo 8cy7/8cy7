@@ -1,12 +1,15 @@
-## Hi, I'm Abdulaziz Alfahad
+<div align="center">
 
-Software Engineer, iOS Developer and Founder based in Saudi Arabia. I build products where code, design and commerce meet.
+<img src="./contrib-heatmap.svg" width="100%" alt="Contribution graph" />
 
-- Software Engineering graduate, Prince Sattam bin Abdulaziz University (Excellent with Honors, GPA 4.65/5)
-- Accredited engineer, Saudi Council of Engineers
-- Software engineer at [Sanal](https://sanal.ai), working across mobile, backend and dashboards
-- 1st place at Saudi Preneur (100,000 SAR prize) and winner of multiple hackathons
-- 7+ years in e-commerce with over 800,000 SAR in sales
+<table>
+<tr>
+<td valign="top"><img src="./ascii-portrait.svg" height="444" alt="ASCII portrait" /></td>
+<td valign="top"><img src="./info-card.svg" height="444" alt="whoami" /></td>
+</tr>
+</table>
+
+</div>
 
 ### Featured Projects
 
@@ -17,14 +20,3 @@ Software Engineer, iOS Developer and Founder based in Saudi Arabia. I build prod
 | [Motivito](https://github.com/8cy7/Motivito) | Gamified task app for children with a parent dashboard (graduation project) | React Native, Node.js, Prisma |
 | [Portfolio](https://github.com/8cy7/8cy7.github.io) | My personal website with project case studies | Next.js, React, TypeScript, Tailwind |
 | [Paradise Nursery](https://github.com/8cy7/paradisenursery) | Plant shop with cart and state management | React, Redux Toolkit |
-
-### Tech Stack
-
-- **Mobile:** Swift, SwiftUI, React Native
-- **Web:** React, Next.js, TypeScript, Tailwind CSS
-- **Backend:** Node.js, Java (Spring Boot), PostgreSQL, Prisma
-- **Tools:** Git, GitHub Actions, Docker
-
-### Links
-
-[Website](https://8cy7.github.io) · [LinkedIn](https://www.linkedin.com/in/abdulaziz-alfahad-b3b2a2243)

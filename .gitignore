@@ -1,0 +1,6 @@
+*.jpg
+*.jpeg
+*.png
+!screenshots/*.png
+__pycache__/
+.venv/
