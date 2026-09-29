@@ -4,12 +4,16 @@
 
 <table>
 <tr>
-<td valign="top"><img src="./ascii-portrait.svg" height="444" alt="ASCII portrait" /></td>
-<td valign="top"><img src="./info-card.svg" height="444" alt="whoami" /></td>
+<td valign="top"><img src="./ascii-portrait.svg" height="480" alt="ASCII portrait" /></td>
+<td valign="top"><img src="./info-card.svg" height="480" alt="whoami" /></td>
 </tr>
 </table>
 
 </div>
+
+### About
+
+Software engineer who treats code as the last step, not the first. I start from requirements and system design, build with maintainable architecture, and own quality through testing, QA and release. Currently at **Sanal**, working on AI-to-AI commerce infrastructure, shipping the consumer app on iOS and Android, and running the pre-release QA process for the engineering team.
 
 ### Featured Projects
 

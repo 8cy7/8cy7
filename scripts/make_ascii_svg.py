@@ -7,13 +7,17 @@ import sys
 from pathlib import Path
 from xml.sax.saxutils import escape
 
-from PIL import Image, ImageFilter, ImageOps
+from PIL import Image, ImageEnhance, ImageFilter, ImageOps
 
 OUT = Path(__file__).resolve().parent.parent / "ascii-portrait.svg"
 
-TARGET_HEIGHT = int(sys.argv[2]) if len(sys.argv) > 2 else 444  # match info-card.svg
-CHAR_W, CHAR_H, FONT = 4.2, 6.9, 7.0
-RAMP = ".'`^,:;Il!i~+_-?][}{1)(|/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$"
+_nums = [a for a in sys.argv[2:] if a.isdigit()]
+TARGET_HEIGHT = int(_nums[0]) if _nums else 444  # match info-card.svg
+EQUALIZE = "--equalize" in sys.argv
+TRUECOLOR = "--truecolor" in sys.argv
+CHAR_W, CHAR_H, FONT = 3.9, 6.4, 6.5
+RAMP = ".:-=+*%#@"
+DENSE = "=+*o%#&@$"
 BG, BORDER, PANEL, MUTED = "#11100E", "#2E2A25", "#1A1815", "#8C8479"
 LIGHT, MID, DEEP = (237, 230, 218), (240, 100, 58), (143, 53, 32)
 
@@ -36,15 +40,22 @@ def mix(a, b, t):
 
 
 def main() -> None:
-    if len(sys.argv) < 2:
+    args = [a for a in sys.argv[1:] if not a.startswith('--')]
+    if not args:
         sys.exit(__doc__)
-    img = load(sys.argv[1])
+    img = load(args[0])
     pad, top = 22, 50
     rows = int((TARGET_HEIGHT - top - pad) / CHAR_H)
     cols = int(rows * img.width / img.height * (CHAR_H / CHAR_W))
     small = img.resize((cols, rows), Image.LANCZOS)
     alpha = small.getchannel("A")
-    gray = ImageOps.equalize(small.convert("L"), mask=alpha.point(lambda a: 255 if a > 128 else 0))
+    color = ImageEnhance.Color(ImageEnhance.Contrast(ImageEnhance.Brightness(small).enhance(1.18)).enhance(1.25)).enhance(1.2)
+    mask = alpha.point(lambda a: 255 if a > 128 else 0)
+    gray = small.convert("L")
+    if EQUALIZE:
+        gray = ImageOps.equalize(gray, mask=mask)
+    else:
+        gray = ImageOps.autocontrast(gray, cutoff=1, mask=mask)
     gray = gray.filter(ImageFilter.UnsharpMask(radius=1.2, percent=160, threshold=2))
 
     width = int(pad * 2 + cols * CHAR_W)
@@ -58,8 +69,13 @@ def main() -> None:
             if a < 0.35:
                 ch, col = " ", None
             else:
-                ch = RAMP[int(v * (len(RAMP) - 1))]
-                col = mix(DEEP, MID, v * 2) if v < 0.5 else mix(MID, LIGHT, (v - 0.5) * 2)
+                ramp = DENSE if TRUECOLOR else RAMP
+                ch = ramp[int(v * (len(ramp) - 1))]
+                if TRUECOLOR:
+                    r, g, b, _ = color.getpixel((x, y))
+                    col = "#%02X%02X%02X" % (r, g, b)
+                else:
+                    col = mix(DEEP, MID, v * 2) if v < 0.5 else mix(MID, LIGHT, (v - 0.5) * 2)
             if spans and col == last:
                 spans[-1][1] += ch
             else:
@@ -75,7 +91,7 @@ def main() -> None:
 
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="ASCII portrait of Abdulaziz Alfahad">
 <style>
-  .l {{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: {FONT}px; opacity: 0; animation: in .4s ease-out forwards; }}
+  .l {{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: {FONT}px; font-weight: 700; opacity: 0; animation: in .4s ease-out forwards; }}
   .t {{ fill: {MUTED}; font-family: ui-monospace, Menlo, monospace; font-size: 12px; }}
   @keyframes in {{ from {{ opacity: 0; }} to {{ opacity: 1; }} }}
   @media (prefers-reduced-motion: reduce) {{ .l {{ animation: none; opacity: 1; }} }}

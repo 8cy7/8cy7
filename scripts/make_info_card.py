@@ -7,20 +7,23 @@ OUT = Path(__file__).resolve().parent.parent / "info-card.svg"
 USER = "abdulaziz@github"
 ROWS = [
     ("name", "Abdulaziz Alfahad"),
-    ("role", "Software Engineer · iOS Developer"),
-    ("company", "Sanal (sanal.ai)"),
-    ("location", "Riyadh, Saudi Arabia"),
-    ("education", "B.Sc. Software Engineering · GPA 4.65/5"),
+    ("role", "Software Engineer @ Sanal"),
+    ("degree", "B.Sc. Software Engineering, PSAU 2026"),
+    ("license", "Accredited Engineer, Saudi Council of Eng."),
     None,
-    ("focus", "iOS · Web platforms · AI products"),
-    ("stack", "Swift, SwiftUI, React, Next.js, TypeScript"),
-    ("backend", "Node.js, Java, PostgreSQL, Prisma"),
+    ("lifecycle", "requirements > design > build > test > ship"),
+    ("quality", "QA ownership, defect tracking, SonarQube"),
+    ("design", "MVC, Observer, modular architecture, CI"),
+    ("building", "AI-to-AI commerce infra, MCP servers"),
     None,
-    ("projects", "Sharih · Motivito · Names of Allah"),
-    ("awards", "1st place, Saudi Preneur"),
-    ("ventures", "7+ yrs e-commerce · 800K+ SAR sales"),
+    ("mobile", "React Native, Expo, Swift, SwiftUI"),
+    ("web", "React, Next.js, TypeScript, Node.js"),
+    ("tools", "Git, GitHub Actions, Docker, Postman"),
     None,
-    ("web", "8cy7.github.io"),
+    ("awards", "1st Saudi Preneur, 1st Empowerment Hack"),
+    ("business", "4 online stores, 800K+ SAR in sales"),
+    None,
+    ("site", "8cy7.github.io"),
     ("linkedin", "in/abdulaziz-alfahad-b3b2a2243"),
 ]
 
@@ -28,7 +31,7 @@ BG, PANEL, BORDER = "#11100E", "#1A1815", "#2E2A25"
 TEXT, MUTED, ACCENT = "#EDE6DA", "#8C8479", "#E4572E"
 PALETTE = ["#26231F", "#5A2A1C", "#8F3520", "#C44627", "#F0643A", "#E8A33D", "#6BA368", "#EDE6DA"]
 
-WIDTH, PAD, LINE = 520, 26, 21
+WIDTH, PAD, LINE = 540, 26, 20
 KEY_W = 96
 
 
