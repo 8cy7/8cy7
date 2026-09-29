@@ -15,7 +15,7 @@ Software Engineer, iOS Developer and Founder based in Saudi Arabia. I build prod
 | [Sharih](https://github.com/8cy7/sharih) | Arabic AI study platform that turns PDFs into narrated lessons, videos and quizzes | Next.js, TypeScript, LLM agents |
 | [Names of Allah](https://github.com/8cy7/names-of-allah) | iOS app for learning the 99 Names, previously published on the App Store | Swift, SwiftUI |
 | [Motivito](https://github.com/8cy7/Motivito) | Gamified task app for children with a parent dashboard (graduation project) | React Native, Node.js, Prisma |
-| [Portfolio](https://github.com/8cy7/8cy7.github.io) | My personal website | React, TypeScript, Framer Motion |
+| [Portfolio](https://github.com/8cy7/8cy7.github.io) | My personal website with project case studies | Next.js, React, TypeScript, Tailwind |
 | [Paradise Nursery](https://github.com/8cy7/paradisenursery) | Plant shop with cart and state management | React, Redux Toolkit |
 
 ### Tech Stack
