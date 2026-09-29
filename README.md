@@ -20,10 +20,10 @@ Software Engineer, iOS Developer and Founder based in Saudi Arabia. I build prod
 
 ### Tech Stack
 
-**Mobile:** Swift, SwiftUI, React Native
-**Web:** React, Next.js, TypeScript, Tailwind CSS
-**Backend:** Node.js, Java (Spring Boot), PostgreSQL, Prisma
-**Tools:** Git, GitHub Actions, Docker
+- **Mobile:** Swift, SwiftUI, React Native
+- **Web:** React, Next.js, TypeScript, Tailwind CSS
+- **Backend:** Node.js, Java (Spring Boot), PostgreSQL, Prisma
+- **Tools:** Git, GitHub Actions, Docker
 
 ### Links
 
